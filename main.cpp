@@ -41,7 +41,7 @@ int main()
     //проверка
     for (int i = 0; i < num_strings; i++)
         printf("%s\n", s[i]);
-    printf("\n\n%d\n\n", num_strings);
+    printf("\n\n\n");
 
     //сортировка
     for (int i = 0; i < num_strings; i++)
