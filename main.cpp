@@ -10,25 +10,25 @@ int main()
     char input_file_name[NUM_SLOTS];
     char output_file_name[NUM_SLOTS];
 
-    //приветствие
+    //РїСЂРёРІРµС‚СЃС‚РІРёРµ
     hello(input_file_name, output_file_name);
 
-    //считывание строк из файла
+    //СЃС‡РёС‚С‹РІР°РЅРёРµ СЃС‚СЂРѕРє РёР· С„Р°Р№Р»Р°
     FILE* input_file = fopen(input_file_name, "r");
     while (my_getline(poem[num_strings], NUM_SLOTS, input_file) != EOF)
         num_strings++;
     num_strings++;
     fclose(input_file);
 
-    //размещение индексов строк
+    //СЂР°Р·РјРµС‰РµРЅРёРµ РёРЅРґРµРєСЃРѕРІ СЃС‚СЂРѕРє
     char* pointer_poem[num_strings];
     for (int i = 0; i < num_strings; i++)
         pointer_poem[i] = &poem[i][0];
 
-    //сортировка строк
+    //СЃРѕСЂС‚РёСЂРѕРІРєР° СЃС‚СЂРѕРє
     my_strsort(pointer_poem, num_strings);
 
-    //вывод результата
+    //РІС‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
     FILE* output_file = fopen(output_file_name, "w");
     for (int i = 0; i < num_strings; i++)
         my_putline(pointer_poem[i], output_file);
