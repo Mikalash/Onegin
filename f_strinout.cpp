@@ -3,8 +3,11 @@
 #include <string.h>
 #include <windows.h>
 
+///считывает строку из файла
 int my_getline(char* s, int n, FILE* stream);
+///помещает строку в файл
 int my_putline(char* s, FILE* stream);
+///получения имени файлов и приветствие
 int hello(char in[], char out[]);
 
 int my_getline(char* s, int n, FILE* stream)
