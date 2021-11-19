@@ -1,8 +1,11 @@
 #include <assert.h>
 #include <string.h>
 
+///сортирует массив индексов строк
 void my_strsort (char* pointer_poem[], int num_strings);
+///алфавитно сравнивает строки 1 - 1я 2 -2я
 int my_strcmp (char s1[], char s2[]);
+///проверяет является ли символ буквой или цифрой да - 1, нет - 0
 int my_char_check (char s);
 
 void my_strsort (char* pointer_poem[], int num_strings)
@@ -53,7 +56,7 @@ int my_strcmp (char s1[], char s2[])
 
 int my_char_check(char s)
 {
-    char not_true[] = "\"\n\t ,.!?<>��()[]:;";
+    char not_true[] = "\"\n\t ,.!?<>»«()[]:;";
     int not_true_len = strlen(not_true);
     int ans = 1;
     for (int i = 0; i <= not_true_len; i++)
