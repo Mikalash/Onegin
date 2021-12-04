@@ -1,11 +1,32 @@
+/**
+@file
+библиотека для сортировки, сравнения строк
+*/
+
 #include <assert.h>
 #include <string.h>
 
-///сортирует массив индексов строк
+/**
+\brief сортирует массив индексов строк
+\param pointer_poem указатель на первый элемент строки индексов
+\param num_strings количество строк
+\return нуль
+*/
 void my_strsort (char* pointer_poem[], int num_strings);
-///алфавитно сравнивает строки 1 - 1я 2 -2я
+
+/**
+\brief алфавитно сравнивает строки
+\param s1 указатель на первый элемент первой строки
+\param s2 указатель на первый элемент второй строки
+\return 1 если 1я строка старше, 2 если 2я
+*/
 int my_strcmp (char s1[], char s2[]);
-///проверяет является ли символ буквой или цифрой да - 1, нет - 0
+
+/**
+\brief проверяет является ли символ буквой или цифрой
+\param s проверяемый символ
+\return 1 - является, 2 - не является
+*/
 int my_char_check (char s);
 
 void my_strsort (char* pointer_poem[], int num_strings)
@@ -22,6 +43,8 @@ void my_strsort (char* pointer_poem[], int num_strings)
                 pointer_poem[j] = pointer_poem[j + 1];
                 pointer_poem[j + 1] = memory;
             }
+
+    return 0;
 }
 
 int my_strcmp (char s1[], char s2[])
