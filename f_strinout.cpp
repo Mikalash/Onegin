@@ -1,13 +1,35 @@
+/**
+@file
+библиотека для считывания и вывода данных и приветсвия пользователю
+*/
+
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
 #include <windows.h>
 
-///считывает строку из файла
+/**
+\brief считывает строчку из файл
+\param s
+\param stream
+\return количество считанных элементов
+*/
 int my_getline(char* s, int n, FILE* stream);
-///помещает строку в файл
+
+/**
+\brief помещает строку в файл
+\param s указател на первый элемент строки которую нужно поместить
+\param stream указатель на файл
+\return нуль
+*/
 int my_putline(char* s, FILE* stream);
-///получения имени файлов и приветствие
+
+/**
+\brief получение имени файлов и приветсвие
+\param in указатель на первый элемент строки с названием входного файла
+\param out указатель на первый элемент строки с названием выходного файла
+\return нуль
+*/
 int hello(char in[], char out[]);
 
 int my_getline(char* s, int n, FILE* stream)
@@ -37,6 +59,8 @@ int my_putline(char* s, FILE* stream)
         putc(s[i], stream);
     if (s[i - 1] != '\n')
         putc('\n', stream);
+
+    return 0;
 }
 
 int hello(char in[], char out[])
@@ -60,4 +84,6 @@ int hello(char in[], char out[])
     system("cls");
 
     printf("Check the result!");
+
+    return 0;
 }
