@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Файл f_strsort.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл f_strsort.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a55a6d63938090246bfff4f667894426c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__strsort_8cpp.html#a55a6d63938090246bfff4f667894426c">my_strsort</a> (char *pointer_poem[], int num_strings)</td></tr>
+<tr class="memdesc:a55a6d63938090246bfff4f667894426c"><td class="mdescLeft">&#160;</td><td class="mdescRight">сортирует массив индексов строк  <a href="f__strsort_8cpp.html#a55a6d63938090246bfff4f667894426c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a55a6d63938090246bfff4f667894426c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88be6b0772fe8bc77ec29af2c25bb972"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__strsort_8cpp.html#a88be6b0772fe8bc77ec29af2c25bb972">my_strcmp</a> (char s1[], char s2[])</td></tr>
+<tr class="memdesc:a88be6b0772fe8bc77ec29af2c25bb972"><td class="mdescLeft">&#160;</td><td class="mdescRight">алфавитно сравнивает строки  <a href="f__strsort_8cpp.html#a88be6b0772fe8bc77ec29af2c25bb972">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88be6b0772fe8bc77ec29af2c25bb972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31969fbcedc514a3b2bacc582254023"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__strsort_8cpp.html#ac31969fbcedc514a3b2bacc582254023">my_char_check</a> (char s)</td></tr>
+<tr class="memdesc:ac31969fbcedc514a3b2bacc582254023"><td class="mdescLeft">&#160;</td><td class="mdescRight">проверяет является ли символ буквой или цифрой  <a href="f__strsort_8cpp.html#ac31969fbcedc514a3b2bacc582254023">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac31969fbcedc514a3b2bacc582254023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >библиотека для сортировки, сравнения строк </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ac31969fbcedc514a3b2bacc582254023" name="ac31969fbcedc514a3b2bacc582254023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31969fbcedc514a3b2bacc582254023">&#9670;&nbsp;</a></span>my_char_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_char_check </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>проверяет является ли символ буквой или цифрой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>проверяемый символ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1 - является, 2 - не является </dd></dl>
+
+</div>
+</div>
+<a id="a88be6b0772fe8bc77ec29af2c25bb972" name="a88be6b0772fe8bc77ec29af2c25bb972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88be6b0772fe8bc77ec29af2c25bb972">&#9670;&nbsp;</a></span>my_strcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_strcmp </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>s1</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>s2</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>алфавитно сравнивает строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>указатель на первый элемент первой строки </td></tr>
+    <tr><td class="paramname">s2</td><td>указатель на первый элемент второй строки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1 если 1я строка старше, 2 если 2я </dd></dl>
+
+</div>
+</div>
+<a id="a55a6d63938090246bfff4f667894426c" name="a55a6d63938090246bfff4f667894426c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a6d63938090246bfff4f667894426c">&#9670;&nbsp;</a></span>my_strsort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_strsort </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pointer_poem</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_strings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>сортирует массив индексов строк </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pointer_poem</td><td>указатель на первый элемент строки индексов </td></tr>
+    <tr><td class="paramname">num_strings</td><td>количество строк </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>нуль </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
